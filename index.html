@@ -68,6 +68,15 @@
 				</div>
 			  </div>
 			  <div class="control-group">
+                <label class="control-label" for="select01">Type</label>
+                  <div class="controls">
+                    <select id="selectType">
+                      <option>BUG</option>
+                      <option>FEATURE</option>
+                    </select>
+                </div>
+              </div>
+			  <div class="control-group">
 				<label class="control-label" for="desciption">Description</label>
 				<div class="controls">
 				  <textarea id="desciption" class="input-xlarge" rows="3"></textarea>
@@ -76,7 +85,12 @@
 			  <div class="control-group">
 				<label class="control-label" for="email">Email</label>
 				<div class="controls">
-				  <input id="email" type="text" class="input-large" placeholder="Votre email ...">
+				  <div class="input-prepend">
+                    <span class="add-on">
+					  <i class="icon-envelope"></i>
+					</span>
+				    <input id="email" type="text" class="span2" placeholder="Votre email ...">
+				  </div>
 				</div>
 			  </div>
 			  <div class="form-actions">
