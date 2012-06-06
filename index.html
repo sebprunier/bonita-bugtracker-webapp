@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>My Bugtracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Bugtracker">
+    <meta name="description" content="MyBugtracker">
     <meta name="author" content="sebprunier">
 
     <!-- Le styles -->
@@ -38,7 +38,7 @@
           <a class="brand" href="#">My Bugtracker</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a href="#">Accueil</a></li>
               <li><a href="#stats">Stats</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -53,11 +53,41 @@
 		</div>
         <div class="span10">
           <h1>My Bugtracker</h1>
-          <p>Custom webapp for the bugtracker developed with Bonita OS</p>
+          <p>Application web pour le Bugtracker personnalisé développé avec Bonita Open Solution</p>
 		</div>
       </div>
 	  <div class="row">
-	    <div class="span6">
+		<div class="span5">
+		  <form class="well form-horizontal">
+		    <fieldset>
+			  <legend>Nouveau ticket</legend>
+			  <div class="control-group">
+				<label class="control-label" for="titre">Titre</label>
+				<div class="controls">
+				  <input id="titre" type="text" class="input-xlarge" placeholder="Titre du ticket ...">
+				</div>
+			  </div>
+			  <div class="control-group">
+				<label class="control-label" for="desciption">Description</label>
+				<div class="controls">
+				  <textarea id="desciption" class="input-xlarge" rows="3"></textarea>
+			    </div>
+			  </div>
+			  <div class="control-group">
+				<label class="control-label" for="email">Email</label>
+				<div class="controls">
+				  <input id="email" type="text" class="input-large" placeholder="Votre email ...">
+				</div>
+			  </div>
+			  <div class="form-actions">
+				<button type="submit" class="btn btn-primary">Save</button>
+				<button class="btn">Clear</button>
+			  </div>
+			</fieldset>
+		  </form>
+		</div>
+	    <div class="span7">
+		  <h2>Liste des tickets</h2>
 		  <table class="table table-condensed">
             <thead>
               <tr>
